@@ -1,0 +1,53 @@
+@import "@assets/less/_mixins.less";
+@import "@assets/less/_variables.less";
+
+.clients-section {
+	position: relative;
+	z-index: 9;
+	background: transparent;
+	padding-bottom: 70px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	.sponsors-outer {
+		position: relative;
+		padding: 75px 45px;
+		-webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+		-ms-box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+		-o-box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
+		background-color: @White;
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 50%;
+			width: 100%;
+			background-color: @White;
+			content: "";
+		}
+	}
+	.sponsors-carousel {
+		.flex-sb()
+	}
+	.slide-item {
+		position: relative;
+	}
+	.image-box {
+		position: relative;
+		margin: 0;
+		text-align: center;
+		opacity: 0.5;
+		.tarnsition-300();
+		&:hover {
+			opacity: 1;
+		}
+		img {
+			display: inline-block;
+			max-width: 100%;
+			width: auto;
+			height: auto;
+		}
+	}
+}

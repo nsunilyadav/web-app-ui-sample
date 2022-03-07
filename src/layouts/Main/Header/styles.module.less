@@ -1,0 +1,79 @@
+@import "@assets/less/_mixins.less";
+@import "@assets/less/_variables.less";
+
+.navbar {
+  display: flex;
+  height: 100px;
+  transition: 0.5s ease-in-out;
+  background-color: @White;
+  .navbarSection {
+    display: flex;
+    flex: auto;
+    transition: 0.5s ease-in-out;
+    .navbarBrand {
+      font-size: @font-26;
+      color: @Blue;
+      font-weight: 700;
+      line-height: normal;
+      a {
+        color: inherit;
+        transition: 0.5s ease-in-out;
+        .imageBox
+        {
+          img
+          {
+            width: 200px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .navSection {
+    .flex-sb()
+  }
+  .navLink {
+    font-size: 19px;
+    font-weight: 700;
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
+    a {
+      color: inherit;
+      transition: 0.5s ease-in-out;
+    }
+    &:hover,
+    &:global(.active) {
+      border-bottom: 3px solid @Blue;
+      transition: 0.5s ease-in-out;
+      a {
+        color: @Blue;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+      .navbar {
+        justify-content: center;
+        text-align: center;
+        .navLink {
+            margin-right: 0;
+        }
+        .navSection {
+            height: calc(100vh - 120px);
+        }
+        .navbarSection {
+            justify-content: space-between;
+            padding: 10px 0;
+            flex-direction: column;
+            .navbarBrand {
+                .flex-ac-sb();
+                margin: 0;
+                a {
+                    font-size: 2vmax;
+                }
+            }
+        }
+    }
+}

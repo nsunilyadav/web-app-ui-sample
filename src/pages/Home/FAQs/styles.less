@@ -1,0 +1,119 @@
+@import "@assets/less/_mixins.less";
+@import "@assets/less/_variables.less";
+
+.faq-skill-section {
+	position: relative;
+	padding: 83px 0 66px;
+}
+
+.accordion-box {
+	position: relative;
+	.accordion-item {
+		border: 0;
+	}
+	.block {
+		position: relative;
+		padding-top: 0px;
+		margin-bottom: 11px;
+		&:last-child {
+			margin-bottom: 0px;
+			border-bottom: 1px solid transparent;
+		}
+		.acc-btn {
+			position: relative;
+			font-size: @font-16;
+			cursor: pointer;
+			line-height: 1.2em;
+			color: @Black_2;
+			font-weight: 700;
+			.tarnsition-500();
+			font-family: @font_family_nunito;
+			border: 1px solid @Grey_d;
+			border-radius: 60px;
+			.accordion-button {
+				background-color: transparent;
+				font-weight: 600;
+				box-shadow: none;
+			}
+		}
+		.acc-btn.active {
+			border: 1px solid @Orange;
+			color: @Blue;
+			.icon-outer {
+				.icon_minus {
+					opacity: 1;
+				}
+				.icon_plus {
+					opacity: 0;
+				}
+				color: @Orange;
+			}
+			.accordion-button {
+				border: 1px solid @Orange;
+			}
+		}
+
+		.acc-btn.active-block {
+			.icon-outer {
+				.icon_minus {
+					opacity: 1;
+				}
+			}
+		}
+		.acc-content {
+			position: relative;
+			display: @none;
+			padding: 20px 20px 10px;
+			.content-text {
+				padding-bottom: 6px;
+			}
+		}
+		.acc-content.current {
+			display: block;
+		}
+		.content {
+			.text {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+.progress-levels {
+	margin-top: 50px;
+	.pr {
+		.accordion-box {
+			.block {
+				.content {
+					position: relative;
+					font-size: @font-12;
+				}
+			}
+		}
+	}
+	position: relative;
+	.progress-box {
+		position: relative;
+		margin-bottom: 40px;
+		overflow: hidden;
+		.box-title {
+			position: relative;
+			font-size: @font-16;
+			color: @Black_2;
+			text-transform: capitalize;
+			margin-bottom: 8px;
+			font-family: @font_family_roboto;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 479px) {
+.faq-skill-section
+{
+	padding: 20px 0;
+	.accordion-column
+	{
+		padding-bottom: 50px;
+	}
+}
+}

@@ -1,0 +1,22 @@
+@import "~antd/es/style/themes/default.less"; // this line is important in order to use the variable
+@import "./../../assets/less/_mixins.less";
+
+.customButton {
+  border-radius: @border-radius-base * 3;
+
+  &:extend(.flex-center-center);
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.default {
+    padding: @padding-xs;
+  }
+
+  &.large {
+    padding: @padding-sm - 4;
+    height: auto;
+    font-size: @btn-font-size-lg;
+  }
+}

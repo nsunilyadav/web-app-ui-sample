@@ -1,0 +1,179 @@
+@import "@assets/less/_mixins.less";
+@import "@assets/less/_variables.less";
+
+.contact-section {
+	position: relative;
+	padding: 84px 0 69px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	.sec-title {
+		margin-bottom: 40px;
+	}
+	.info-column {
+		position: relative;
+		padding-left: 25px;
+		.inner-column {
+			position: relative;
+		}
+		h4 {
+			position: relative;
+			font-size: @font-20;
+			line-height: 1.2em;
+			color: @Black;
+			font-weight: 500;
+			margin-bottom: 25px;
+		}
+		.contact-info {
+			position: relative;
+			li {
+				position: relative;
+				display: block;
+				font-size: @font-12;
+				line-height: 28px;
+				color: @Grey_7;
+				font-weight: 400;
+				margin-bottom: 28px;
+				margin-left: 55px;
+				a {
+					display: inline-block;
+					color: @Grey_7;
+					.tarnsition-300();
+					&:hover {
+						color: @Orange;
+					}
+				}
+				i {
+					display: block;
+					&:before {
+						font-size: @font-22;
+						color: @Blue;
+						display: inline-block;
+						margin-left: -54px;
+						position: absolute;
+						margin-top: 8px;
+					}
+				}
+				span {
+					font-size: @font-20;
+					font-weight: 700;
+					line-height: 42px;
+					color: @Blue;
+					font-family: @font_family_nunito;
+				}
+			}
+		}
+	}
+	.form-column {
+		position: relative;
+	}
+	.contact-form {
+		position: relative;
+		padding-top: 13px;
+	}
+}
+
+
+.contact-form {
+	.form-group {
+		position: relative;
+		margin-bottom: 30px;
+		input[type="text"] {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 13px;
+			color: @Grey_7;
+			line-height: 19px;
+			padding: 15px 30px;
+			background-color: @White;
+			font-weight: 400;
+			height: 50px;
+			border: 1px solid @Grey_d;
+			.tarnsition-300();
+			border-radius: 25px;
+		}
+		input[type="email"] {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 13px;
+			color: @Grey_7;
+			line-height: 19px;
+			padding: 15px 30px;
+			background-color: @White;
+			font-weight: 400;
+			height: 50px;
+			border: 1px solid @Grey_d;
+			.tarnsition-300();
+			border-radius: 25px;
+		}
+		input[type="url"] {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 13px;
+			color: @Grey_7;
+			line-height: 19px;
+			padding: 15px 30px;
+			background-color: @White;
+			font-weight: 400;
+			height: 50px;
+			border: 1px solid @Grey_d;
+			.tarnsition-300();
+			border-radius: 25px;
+		}
+		textarea {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 13px;
+			color: @Grey_7;
+			line-height: 19px;
+			padding: 15px 30px;
+			background-color: @White;
+			font-weight: 400;
+			height: 50px;
+			border: 1px solid @Grey_d;
+			.tarnsition-300();
+			border-radius: 25px;
+			height: 140px;
+			resize: none;
+			border-radius: 15px;
+			&:focus {
+				border-color: @Orange;
+			}
+		}
+		select {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 13px;
+			color: @Grey_7;
+			line-height: 19px;
+			padding: 15px 30px;
+			background-color: @White;
+			font-weight: 400;
+			height: 50px;
+			border: 1px solid @Grey_d;
+			.tarnsition-300();
+			border-radius: 25px;
+			&:focus {
+				border-color: @Orange;
+			}
+		}
+		input {
+			&:focus {
+				border-color: @Orange;
+			}
+		}
+		button {
+			padding: 15px 50px;
+			line-height: 20px;
+			text-transform: uppercase;
+		}
+		label.error {
+			color: @Orange;
+		}
+	}
+}

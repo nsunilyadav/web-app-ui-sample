@@ -1,0 +1,162 @@
+@import "@assets/less/_mixins.less";
+@import "@assets/less/_variables.less";
+
+.project-details-section {
+	position: relative;
+	padding: 60px 0;
+}
+.tabs-box {
+	position: relative;
+	.tab {
+		display: @none;
+	}
+	.tab.active-tab {
+		display: block;
+	}
+}
+.project-detail {
+	.upper-box {
+		position: relative;
+	}
+	.project-tabs {
+		position: relative;
+		.tab-btns {
+			position: relative;
+			
+			margin-left: 20px;
+			width: 370px;
+		}
+		.tab-btn {
+			position: relative;
+			display: block;
+			cursor: pointer;
+			margin-bottom: 25px;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.tabs-content {
+		position: relative;
+		
+	}
+	.image {
+		position: relative;
+		width: 100%;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.lower-content {
+		position: relative;
+		padding-top: 20px;
+		.pdf-btn {
+			.icon {
+				margin-left: 15px;
+			}
+		}
+		.content-column {
+			position: relative;
+		}
+		h2 {
+			position: relative;
+			display: block;
+			font-size: @font-24;
+			line-height: 1.2em;
+			color: @Black_2;
+			font-weight: 700;
+			margin-bottom: 20px;
+		}
+		h3 {
+			position: relative;
+			display: block;
+			font-size: @font-24;
+			line-height: 1.2em;
+			color: @Black_2;
+			font-weight: 500;
+			margin-bottom: 27px;
+		}
+		h4 {
+			position: relative;
+			display: block;
+			font-size: @font-24;
+			line-height: 1.2em;
+			color: @Black_2;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+		h5 {
+			font-size: @font-18;
+			font-weight: 700;
+			color: @Blue;
+			padding-bottom: 16px;
+		}
+		p {
+			position: relative;
+			display: block;
+			font-size: @font-16;
+			line-height: 28px;
+			color: #666666;
+			font-weight: 400;
+			margin-bottom: 30px;
+		}
+	}
+	.info-column {
+		h2 {
+			color: var(--pc);
+		}
+		position: relative;
+	}
+	.list-image {
+		position: relative;
+		width: 100%;
+		margin-bottom: 20px;
+		.image-box-right {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.list-style-one {
+		position: relative;
+		margin-bottom: 30px;
+		&:after {
+			display: table;
+			clear: both;
+			content: "";
+		}
+	}
+	.info-list {
+		position: relative;
+		display: block;
+		margin-bottom: 40px;
+		border: 1px solid @Grey_e;
+		li {
+			position: relative;
+			font-size: @font-14;
+			line-height: 28px;
+			color: #888888;
+			font-weight: 400;
+			border-bottom: 1px solid @Grey_e;
+			padding: 9px 22px;
+			strong {
+				position: relative;
+				
+				color: @Blue;
+				font-weight: 700;
+				width: 145px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.project-details-section
+	{
+		padding: 20px 0;
+	}
+}

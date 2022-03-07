@@ -1,0 +1,36 @@
+@import "@assets/less/_mixins.less";
+@import "@assets/less/_variables.less";
+
+.quote-section {
+	width: 100%;
+	background-color: @Blue;
+	.inner-column {
+		.flex-ac-sb();
+		height: 100px;
+		width: 100%;
+		h3 {
+			// float: left;
+			font-size: @font-30;
+			color: @White;
+			font-weight: 700;
+		}
+		.get-quote-btn {
+			display: block;
+		}
+	}
+}
+@media only screen and (max-width: 479px) {
+	.quote-section {
+		.inner-column {
+			flex-direction: column;
+			text-align: center;
+			height: 180px;
+			padding: 10px 0;
+			justify-content: space-around;
+			h3 {
+				font-size: @font-22;
+			}
+		}
+	}
+	
+}
